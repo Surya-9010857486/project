@@ -19,8 +19,11 @@ pipeline {
         }
     }
     post {
-        always {
-            emailext body: 'Build summary', subject: 'Pipeline status', to: 'suryaperimidi123@gmail.com'
+        success {
+            emailext body: 'Build summary', subject: 'Pipeline success', to: 'sailahari061123@gmail.com'
+        }
+        failure {
+            emailext body: 'Build summary', subject: 'The Pipeline failed', to: 'sailahari061123@gmail.com'
         }
     }
 }
