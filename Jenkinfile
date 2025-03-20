@@ -20,7 +20,7 @@ pipeline {
     }
     post {
         always {
-            emailext body: 'Build summary', subject: 'Pipeline status', to: 'sailahari061123@gmail.com'
+            emailext body: 'Build summary', subject: 'Pipeline status', to: 'suryaperimidi123@gmail.com'
         }
     }
 }
